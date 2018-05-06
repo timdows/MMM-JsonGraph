@@ -18,6 +18,11 @@ Module.register("MMM-JsonGraph", {
 		this.scheduleUpdate();
 	},
 
+
+	getStyles: function(){
+		return ["MMM-JsonGraph.css"];
+	},
+
 	scheduleUpdate: function () {
 		var self = this;
 		setInterval(function () {
