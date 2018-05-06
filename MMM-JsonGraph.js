@@ -76,12 +76,13 @@ Module.register("MMM-JsonGraph", {
 		}
 
 		var rects = "";
-		var maxValue = Math.max.apply(Math, items.map(function (o) { return o[this.config.xAxisName]; }))
+		var xAxisName = this.config.xAxisName;
+		var maxValue = Math.max.apply(Math, items.map(function (o) { return o[xAxisName]; }))
 		var indexHeight = 0;
 
 		items.forEach(element => {
 			var xAxisValue = element[this.config.xAxisName];
-			var width = (value / maxValue) * 100;
+			var width = (xAxisValue / maxValue) * 100;
 			var height = 20 * indexHeight;
 			rects += `<g class="mmmJsonGraph-bar">
 				<rect width="` + width + `%" height="19" y="` + height + `"></rect>
