@@ -52,6 +52,11 @@ Module.register("MMM-JsonGraph", {
 			return wrapper;
 		}
 		
+		wrapper.innerHTML = this.createGraph(this.jsonData);		
+		return wrapper;
+	},
+
+	createGraph: function(json) {
 		var a = `<figure>
 		<figcaption>A graph that shows the number of fruit collected</figcaption>
 	  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart" width="420" height="150" aria-labelledby="title" role="img">
@@ -78,7 +83,5 @@ Module.register("MMM-JsonGraph", {
 		</g>
 	  </svg>
 	  </figure>`;
-
-		return a;
 	}
 });
