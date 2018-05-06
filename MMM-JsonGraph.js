@@ -76,7 +76,7 @@ Module.register("MMM-JsonGraph", {
 		}
 
 		var rects = "";
-		var maxValue = Math.max.apply(Math, array.map(function (o) { return o[this.config.xAxisName]; }))
+		var maxValue = Math.max.apply(Math, items.map(function (o) { return o[this.config.xAxisName]; }))
 		var indexHeight = 0;
 
 		items.forEach(element => {
