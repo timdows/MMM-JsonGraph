@@ -83,5 +83,6 @@ Module.register("MMM-JsonGraph", {
 		</g>
 	  </svg>
 	  </figure>`;
+	  return a;
 	}
 });
