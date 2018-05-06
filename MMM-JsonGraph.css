@@ -2,3 +2,7 @@
 	fill: #aaa;
 	height: 2rem;
 }
+
+.mmmJsonGraph-bar > text {
+	fill: #fff;
+}

@@ -86,7 +86,7 @@ Module.register("MMM-JsonGraph", {
 			var height = 20 * indexHeight;
 			rects += `<g class="mmmJsonGraph-bar">
 				<rect width="` + width + `%" height="19" y="` + height + `"></rect>
-				<text x="` + width + `%" y="` + (height + 8) + `" dy=".35em">` + xAxisValue + ` steps</text>
+				<text x="10" y="` + (height + 8) + `" dy=".35em">` + xAxisValue + ` steps</text>
 			</g>`;
 			indexHeight++;
 		});
