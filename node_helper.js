@@ -9,8 +9,6 @@ module.exports = NodeHelper.create({
 	getJson: function (url) {
 		var self = this;
 
-		self.sendSocketNotification("MMM-JsonGraph_JSON_RESULT", {url: url, data: testJson});
-
 		request({ url: url, method: 'GET' }, function (error, response, body) {
 			if (!error && response.statusCode == 200) {
 				var json = JSON.parse(body);
