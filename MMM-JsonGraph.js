@@ -37,6 +37,7 @@ Module.register("MMM-JsonGraph", {
 
 	socketNotificationReceived: function (notification, payload) {
 		if (notification === "MMM-JsonGraph_JSON_RESULT") {
+			console.log("MMM-JsonGraph_JSON_RESULT", payload);
 			// Only continue if the notification came from the request we made
 			// This way we can load the module more than once
 			if (payload.url === this.config.url) {
