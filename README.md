@@ -59,3 +59,15 @@ Configuration:
 	}
 },
 ```
+
+## Installation
+````
+git clone https://github.com/timdows/MMM-JsonGraph.git
+````
+
+## Config Options
+| **Option** | **Default** | **Description** |
+| --- | --- | --- |
+| url | "" | The full url to get the json response from |
+| arrayName | null | Define the name of the variable that holds the array to display |
+| updateInterval | 15000 | Milliseconds between the refersh |
