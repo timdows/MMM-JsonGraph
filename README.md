@@ -70,4 +70,6 @@ git clone https://github.com/timdows/MMM-JsonGraph.git
 | --- | --- | --- |
 | url | "" | The full url to get the json response from |
 | arrayName | null | Define the name of the variable that holds the array to display |
+| xAxisName | "" | Should be of the type number in order to determine the width of the bar |
+| textValue | "" | The name of the variable in the array that holds text to display over the bar |
 | updateInterval | 15000 | Milliseconds between the refersh |
