@@ -94,7 +94,7 @@ Module.register("MMM-JsonGraph", {
 
 		return `
 		<figure>
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart" width="300" height="150" role="img">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chart" width="300" height="` + items.length * 20 + `" role="img">
 				` + rects + `
 	  		</svg>
 	  	</figure>`;
